@@ -49,14 +49,14 @@ class UpdateTrainerComponent extends Component {
         };
         console.log(JSON.stringify(trainer));
        TrainerService.updateTrainer(trainer,this.state.trainerId).then((res) =>{
-            //this.props.history.push('/trainers');
+            
             alert("Your Data  Successfully Submitted....!");
             window.open("/trainer")
        });
     }  
     
     cancel(){
-        //this.props.history.push('/trainers');
+    
     }
 
     changeIdHandler = (event) =>{

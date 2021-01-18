@@ -205,6 +205,57 @@
           
         }
 
+        .description-role{
+          position: absolute;
+          top: 0%;
+          margin: auto;
+          padding: 2em;
+          left: 0;
+          width: 100%;
+          height: 100%;
+           background-image: url('../src/user.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: cover;
+            background-color: #464646;
+          
+        }
+
+        .description-bg-login{
+          position: absolute;
+          top: 0%;
+          margin: auto;
+          padding: 2em;
+          left: 0;
+          width: 100%;
+          height: 100%;
+           background-image: url('../src/bg-login.jpeg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: cover;
+            background-color: #464646;
+          
+        }
+
+        .description-bg-forgot{
+          position: absolute;
+          top: 0%;
+          margin: auto;
+          padding: 2em;
+          left: 0;
+          width: 100%;
+          height: 100%;
+           background-image: url('../src/forgot.jpeg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: cover;
+            background-color: #464646;
+          
+        }
+
 
         
 
