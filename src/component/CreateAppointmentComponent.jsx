@@ -24,6 +24,7 @@ class CreateAppointmentComponent extends Component {
         this.changeAmountHandler=this.changeAmountHandler.bind(this);
         this.changeLocationHandler=this.changeLocationHandler.bind(this);
         this.changeDateHandler=this.changeDateHandler.bind(this);
+        this.saveAppointment = this.saveAppointment.bind(this);
         
     }     
 
@@ -39,6 +40,9 @@ class CreateAppointmentComponent extends Component {
             date:this.state.date ,
             
         };
+       /*  if(this.props.emitEvent){
+            this.props.emitEvent();
+        }  */
         console.log(JSON.stringify(appointment));
         AppointmentService.addAppointment(appointment).then(res =>{
             this.props.history.push('/appointments');
@@ -90,11 +94,11 @@ class CreateAppointmentComponent extends Component {
 
     render() {
         
-        const {appointment_id, user_id,trainer_id,trainer_Preference, phy_the,
+        /* const {appointment_id, user_id,trainer_id,trainer_Preference, phy_the,
         amount,location, date} = this.props;
             if(!location){
                 return null;
-            }
+            }  */
         return (<div class="description-bg-all">
             <div>               
                 <div className="container" data-test="AppointmentComponent">

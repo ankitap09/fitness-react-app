@@ -29,6 +29,7 @@ class CreateTrainerComponent extends Component {
         this.changeMobileNoHandler=this.changeMobileNoHandler.bind(this);
         this.changePasswordHandler=this.changePasswordHandler.bind(this);
         this.changeRoleHandler=this.changeRoleHandler.bind(this);
+        this.saveTrainer = this.saveTrainer.bind(this);
     }     
 
     saveTrainer = (t)=>{
@@ -37,6 +38,9 @@ class CreateTrainerComponent extends Component {
             address:this.state.address, mobileNo:this.state.mobileNo , password:this.state.password ,
             role: this.state.role
         };
+      /*   if(this.props.emitEvent){
+            this.props.emitEvent();
+        }  */
          console.log(JSON.stringify(trainer));
         TrainerService.addTrainer(trainer).then(res =>{
            // this.props.history.push('/trainer');
@@ -88,7 +92,7 @@ class CreateTrainerComponent extends Component {
 
     render() {
         
-        const {trainerId ,
+        /*  const {trainerId ,
         trainerName,
         emailId,
         address,
@@ -98,7 +102,7 @@ class CreateTrainerComponent extends Component {
 
         if(!trainerName){
             return null;
-        }
+        }  */
         return (
             <div class="description-bg-all">
             <div>               

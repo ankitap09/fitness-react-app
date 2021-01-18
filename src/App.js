@@ -42,6 +42,7 @@ function App() {
           <div className="container">
             <Switch>
             <Route path = "/" component= {NavbarPage}></Route> 
+            
             <Route path = "/home" component= {Home}><Home /></Route> 
               <Route path = "/about-us" component= {AboutUs}><AboutUs/></Route> 
               <Route path = "/contact-us" component= {ContactUs}><ContactUs/></Route> 

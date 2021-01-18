@@ -35,25 +35,25 @@ const NavbarPage = () => (
   <Router>
     <Navbar className="navbar" variant="light">
         <nav class="navbar navbar-expand-lg fixed-top ">  
- <a class="navbar-brand" href="#"><strong>Fitness Training App</strong></a>
+ <a class="navbar-brand" href="#"><strong>Aims Fitness Center</strong></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
  <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
  <li class="nav-item">
-     <a class="nav-link" data-value="home" href="/home"><strong>Home</strong></a>        </li>  
-     <strong><NavDropdown title="Role" id="basic-nav-dropdown">
+     <a class="nav-link" data-value="home" href="/home"><strong><b>Home</b></strong></a>        </li>  
+    <b> <strong><NavDropdown title="Role" id="basic-nav-dropdown">
                                       <NavDropdown.Item href="/admin"><b>Admin</b></NavDropdown.Item>
                                       <NavDropdown.Divider />
                                       <NavDropdown.Item href="/user"><b>User</b></NavDropdown.Item>
                                       <NavDropdown.Divider />
                                       <NavDropdown.Item href="/trainer"><b>Trainer</b></NavDropdown.Item>
-                                  </NavDropdown></strong>
+                                  </NavDropdown></strong></b>
 <li class="nav-item">
-    <a class="nav-link " data-value="about-us"href="/about-us"><strong>About Us</strong></a>    
+    <a class="nav-link " data-value="about-us"href="/about-us"><strong><b>About Us</b></strong></a>    
  </li>
  <li class="nav-item"> 
-    <a class="nav-link " data-value="contact-us" href="/contact-us"><strong>Contact Us</strong></a>         </li>   
+    <a class="nav-link " data-value="contact-us" href="/contact-us"><strong><b>Contact Us</b></strong></a>         </li>   
 </ul> 
 </div></nav> 
     </Navbar>   

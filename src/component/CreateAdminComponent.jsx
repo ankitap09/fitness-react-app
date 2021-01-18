@@ -21,6 +21,7 @@ class CreateAdminComponent extends Component {
         this.changeMobileNoHandler=this.changeMobileNoHandler.bind(this);
         this.changePasswordHandler=this.changePasswordHandler.bind(this);
         this.changeRoleHandler=this.changeRoleHandler.bind(this);
+        this.saveAdmin = this.saveAdmin.bind(this);
     }     
 
     saveAdmin = (t)=>{
@@ -29,6 +30,9 @@ class CreateAdminComponent extends Component {
             address:this.state.address, mobileNo:this.state.mobileNo , password:this.state.password ,
             role: this.state.role
         };
+         if(this.props.emitEvent){
+            this.props.emitEvent();
+        }  
         console.log(JSON.stringify(admin));
         AdminService.addAdmin(admin).then(res =>{
             this.props.history.push('/admins');
@@ -71,7 +75,7 @@ class CreateAdminComponent extends Component {
 
     render() {
         
-        const { admin_id,
+         const { admin_id,
         admin_name,
         emailId,
         address,
@@ -81,7 +85,7 @@ class CreateAdminComponent extends Component {
     
             if(!admin_name){
                 return null;
-            }
+            } 
         return (
             <div>               
                 <div className="container" data-test="AdminComponent">

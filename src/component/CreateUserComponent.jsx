@@ -34,6 +34,7 @@ class CreateUserComponent extends Component {
         this.changeAgeHandler= this.changeAgeHandler.bind(this);
         this.changePasswordHandler= this.changePasswordHandler.bind(this);
         this.changeRoleHandler= this.changeRoleHandler.bind(this);
+        this.saveUser = this.saveUser.bind(this);
        
     }     
 
@@ -44,6 +45,9 @@ class CreateUserComponent extends Component {
             city: this.state.city,  pincode: this.state.pincode,  mobileNo: this.state.mobileNo,  age: this.state.age,
             password: this.state.password,  role: this.state.role
         };
+       /*  if(this.props.emitEvent){
+            this.props.emitEvent();
+        }  */
         console.log(JSON.stringify(user));
         UserService.addUser(user).then(res =>{
            this.props.history.push('/users');
@@ -111,14 +115,14 @@ class CreateUserComponent extends Component {
     render() {
 
         
-        const {userId,fname,lname,emailId,shippingAddress,
+         /* const {userId,fname,lname,emailId,shippingAddress,
             country,state,city, pincode,mobileNo,age,password,
             role} = this.props;
     
             if(!fname){
                 return null;
-            }
-
+            } */
+ 
 
         return ( <div class="description-bg-all">
             <div>               

@@ -6,9 +6,9 @@ class Home extends Component {
       <div>
   
       <div class="description">
-      <h1>    Hello ,Welcome To Fitness Training App
+      <marquee direction="left" scrollamount="18"> <h1>    Hello ,Welcome To Aims Fitness Center</h1></marquee>
         <br/><br/>  
-        <a href='/about-us'>
+       <h1> <a href='/about-us'>
               <button class="btn btn-outline-secondary btn-lg">See more</button>  </a> 
               </h1>  
    </div>
