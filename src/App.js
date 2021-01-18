@@ -3,8 +3,6 @@ import './App.css';
 import {BrowserRouter as Router, Route, Switch,Link} from 'react-router-dom';
 import NavbarPage from './component/NavbarPage';
 import AboutUs from './component/AboutUs';
-
-//import ContactUs from './ContactUs';
 import Home from './component/Home';
 import ContactUs from './component/ContactUs';
 import User from './component/User';
